@@ -1,0 +1,26 @@
+<?php
+
+namespace robotsFactory\kinds;
+
+require_once ('Robot.php');
+
+class MyHydra2 extends Robot
+{
+    ///////////////////////////////////////////////////////////////////////////////
+
+    protected $weight = 1;
+    protected $speed  = 2;
+    protected $height = 3;
+
+    ///////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * MyHydra2 constructor.
+     */
+    public function __construct()
+    {
+        $this->type = $this->getClassName( __CLASS__ );
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////
+}
